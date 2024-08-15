@@ -1,62 +1,18 @@
-// you can overwrite this entire file with your v0 Component.
-// just copy and paste the "React" output over the entire file.
-
-import Link from "next/link";
-import React from "react";
-import {V0Logo} from "./symbols";
-
-function TestComponent() {
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/kq2ayGaOVz0
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+export default function Component() {
   return (
-    <div
-      style={{
-        display: "flex",
-        height: "100%",
-        justifyContent: "space-between",
-        flexDirection: "column",
-        width: "100%",
-      }}
-    >
-      <h3
-        style={{
-          maxWidth: "11em",
-        }}
-      >
-        This would be a pretty good place for a{" "}
-        <Link href="https://v0.dev/" target="_blank" rel="noopener noreferrer">
-          v0 component
-        </Link>
-        , wouldn't it?
-      </h3>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
-          width: "100%",
-        }}
-      >
-        <p
-          style={{
-            maxWidth: "20em",
-          }}
-        >
-          Go make one, then paste it into{" "}
-          <code
-            style={{
-              fontFamily: "var(--font-geist-mono)",
-              fontWeight: 500,
-              fontSize: "0.95em",
-              fontFeatureSettings: "'ss09'",
-            }}
-          >
-            app/components/MyV0Component.tsx
-          </code>
+    <section className="w-full py-12 md:py-24 lg:py-32">
+      <div className="container px-4 md:px-6 flex flex-col items-center justify-center text-center space-y-4">
+        <div className="text-6xl">👋</div>
+        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Thank you for stopping by</h1>
+        <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          We're excited to have you here and can't wait to show you what we've been working on.
         </p>
-
-        <V0Logo />
       </div>
-    </div>
-  );
+    </section>
+  )
 }
-
-export default TestComponent;
